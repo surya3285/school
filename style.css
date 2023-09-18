@@ -1,0 +1,146 @@
+/* Reset some default styles for consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  main {
+    transition: margin-left .5s;
+  }
+  
+  .upcoming-events, .recent-activities {
+    margin-bottom: 2rem;
+  }
+  
+  .upcoming-events h2, .recent-activities h2, .calendar h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .event {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Responsive design - adjust styles for smaller screens */
+  @media screen and (max-width: 600px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    nav li {
+      margin-right: 0.5rem;
+    }
+  
+    .event {
+      padding: 0.5rem;
+    }
+  }
+  
+  .carousel-item {
+
+    height: 40vh;
+  }
+
+  .d-block{
+    margin: auto;
+  }
+  .carousel-item h5 {
+
+    background-color: white;
+    display: inline;
+    padding: 10px;
+    border-radius: 5px;
+    
+  }
+  .carousel-item h5 p{
+    margin-top: 15px;
+  }
+  .carousel-item-text{
+    margin-top: 10px;
+    color: white;
+    font-size: 200%;
+    font-family: 'Preahvihear', sans-serif;
+    text-shadow: 2px 2px 2px black;
+  }
+.sidebar {
+  height: 100%;
+  width: 500px;
+  position: fixed;
+  z-index: 2;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+.Contact {
+  width: 80%;
+  margin: auto;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
